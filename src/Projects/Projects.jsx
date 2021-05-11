@@ -1,5 +1,12 @@
 import React from "react";
-import { Card, Grid, CardContent, Typography, Button } from "@material-ui/core";
+import {
+  Card,
+  Grid,
+  CardContent,
+  CssBaseline,
+  Typography,
+  Button
+} from "@material-ui/core";
 
 import "./Styles.css";
 import useStyles from "./Style";
@@ -8,6 +15,8 @@ const Projects = ({ resume }) => {
   const classes = useStyles();
   return (
     <>
+      <CssBaseline />
+      <div className={classes.toolbar} />
       <Grid container justify="center" spacing={4}>
         {resume.map((resume) => (
           <Grid item key={resume.id} xs={12} sm={6} md={4} lg={3}>

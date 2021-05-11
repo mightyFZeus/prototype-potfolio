@@ -10,5 +10,6 @@ export default makeStyles((theme) => ({
   },
   stack: {
     marginBottom: "0.3em"
-  }
+  },
+  toolbar: theme.mixins.toolbar
 }));
