@@ -16,22 +16,7 @@ const NavBar = () => {
   const [drawer, setDrawer] = useState(false);
   const toggleDrawer = (open) => (event) => setDrawer(open);
 
-  const test = () => (
-    <List>
-      <ListItem>
-        <ListItemText>Home</ListItemText>
-      </ListItem>
-      <ListItem>
-        <ListItemText>Projects</ListItemText>
-      </ListItem>
-      <ListItem>
-        <ListItemText>Resume</ListItemText>
-      </ListItem>
-      <ListItem>
-        <ListItemText>Contact</ListItemText>
-      </ListItem>
-    </List>
-  );
+  const lists = ["Home", "Projects", "Resume", "Contact Me"];
   return (
     <>
       <AppBar position="fixed" color="inherit">
@@ -47,7 +32,13 @@ const NavBar = () => {
               open={drawer}
               onClose={toggleDrawer(false)}
             >
-              {test()}
+              {lists.map((list) => (
+                <List>
+                  <ListItem>
+                    <ListItemText>{list}</ListItemText>
+                  </ListItem>
+                </List>
+              ))}
             </Drawer>
           </div>
         </Toolbar>
