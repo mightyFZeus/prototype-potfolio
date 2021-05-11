@@ -28,12 +28,13 @@ const Projects = ({ resume }) => {
                 <Typography variant="h6" className={classes.stack}>
                   {resume.stack}
                 </Typography>
-                <Typography variant="body2">{resume.description}</Typography>
+                <Typography className={classes.description} variant="body2">{resume.description}</Typography>
                 <a href={resume.github}>
                   <Button
                     style={{ textTransform: "none" }}
                     variant="contained"
                     color="primary"
+                    className={classes.button}
                   >
                     github
                   </Button>

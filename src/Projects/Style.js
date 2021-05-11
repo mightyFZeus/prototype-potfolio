@@ -11,5 +11,11 @@ export default makeStyles((theme) => ({
   stack: {
     marginBottom: "0.3em"
   },
-  toolbar: theme.mixins.toolbar
+  toolbar: theme.mixins.toolbar,
+  button:{
+    marginRight:'2em'
+  },
+  description:{
+    marginBottom: '1.5em'
+  }
 }));
