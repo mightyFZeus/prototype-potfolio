@@ -1,6 +1,8 @@
 import "./styles.css";
 import uuid from "react-uuid";
 import Projects from "./Projects/Projects";
+import Home from "./Home/Home";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
 const resume = [
   {
@@ -38,9 +40,17 @@ const resume = [
 ];
 
 export default function App() {
+  const theme = createMuiTheme({
+    typography: {
+      fontFamily: ["Raleway", "sans-serif"].join(",")
+    }
+  });
   return (
     <>
-      <Projects resume={resume} />
+      <ThemeProvider theme={theme}>
+        <Projects resume={resume} />
+        <Home />
+      </ThemeProvider>
     </>
   );
 }

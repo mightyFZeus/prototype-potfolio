@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Grid, CardContent, Typography, Button } from "@material-ui/core";
-
+import "./Styles.css";
 const Projects = ({ resume }) => {
   return (
     <>
@@ -9,7 +9,7 @@ const Projects = ({ resume }) => {
           <Grid item key={resume.id} xs={12} sm={6} md={4} lg={3}>
             <Card>
               <CardContent key={resume.id}>
-                <Typography>{resume.title}</Typography>
+                <Typography className="test">{resume.title}</Typography>
                 <Typography>{resume.stack}</Typography>
                 <Typography>{resume.description}</Typography>
                 <a href={resume.github}>
