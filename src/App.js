@@ -1,8 +1,9 @@
 import "./styles.css";
 import uuid from "react-uuid";
 import Projects from "./Projects/Projects";
-import NavBar from './NavBar/NavBar'
+import NavBar from "./NavBar/NavBar";
 import Home from "./Home/Home";
+import { CssBaseline } from "@material-ui/core";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
 const resume = [
@@ -48,13 +49,12 @@ export default function App() {
   });
   return (
     <>
+      <CssBaseline />
       <ThemeProvider theme={theme}>
-        <Projects resume={resume} /> 
+        <Projects resume={resume} />
         <Home />
         <NavBar />
-       
       </ThemeProvider>
-      
     </>
   );
 }
