@@ -18,7 +18,18 @@ const NavBar = () => {
 
   const test = () => (
     <List>
-      <ListItem> it works</ListItem>
+      <ListItem>
+        <ListItemText>Home</ListItemText>
+      </ListItem>
+      <ListItem>
+        <ListItemText>Projects</ListItemText>
+      </ListItem>
+      <ListItem>
+        <ListItemText>Resume</ListItemText>
+      </ListItem>
+      <ListItem>
+        <ListItemText>Contact</ListItemText>
+      </ListItem>
     </List>
   );
   return (
