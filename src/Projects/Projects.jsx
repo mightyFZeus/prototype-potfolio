@@ -1,7 +1,11 @@
 import React from "react";
 import { Card, Grid, CardContent, Typography, Button } from "@material-ui/core";
+
 import "./Styles.css";
+import useStyles from "./Style";
+
 const Projects = ({ resume }) => {
+  const classes = useStyles();
   return (
     <>
       <Grid container justify="center" spacing={4}>
@@ -9,9 +13,13 @@ const Projects = ({ resume }) => {
           <Grid item key={resume.id} xs={12} sm={6} md={4} lg={3}>
             <Card>
               <CardContent key={resume.id}>
-                <Typography className="test">{resume.title}</Typography>
-                <Typography>{resume.stack}</Typography>
-                <Typography>{resume.description}</Typography>
+                <Typography className={classes.title} variant="h4">
+                  {resume.title}
+                </Typography>
+                <Typography variant="h6" className={classes.stack}>
+                  {resume.stack}
+                </Typography>
+                <Typography variant="body2">{resume.description}</Typography>
                 <a href={resume.github}>
                   <Button
                     style={{ textTransform: "none" }}
