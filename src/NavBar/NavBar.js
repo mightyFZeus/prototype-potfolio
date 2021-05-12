@@ -40,7 +40,7 @@ const NavBar = () => {
     <>
       <AppBar position="fixed" color="inherit">
         <Toolbar>
-          <Typography variant="h6">+Zeus</Typography>
+          <Typography variant="h4">+Zeus</Typography>
 
           <div className={classes.menu}>
             <IconButton onClick={toggleDrawer(true)}>
