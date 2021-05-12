@@ -5,21 +5,40 @@ export default makeStyles((theme) => ({
   name: {
     marginBottom: "1.5rem",
     fontWeight: 700,
-    fontSize: "6rem",
-    "@media(max-width:600px)": {
-      fontSize: "3rem"
+    fontSize: "3.5rem",
+    "@media only screen and (min-width: 992px)": {
+      fontSize: "5rem"
     }
   },
 
   role: {
     marginBottom: "1.5rem",
-    "@media(min-width:960px)": {
-      fontSize: "4rem"
+    "@media only screen and (min-width: 600px)": {
+      fontSize: "3rem"
+    },
+    "@media only screen and (min-width: 992px)": {
+      fontSize: "5rem"
     }
   },
   description: {
-    "@media(min-width:960px)": {
-      fontSize: "2rem"
+    marginBottom: "1.5rem",
+    "@media only screen and (min-width: 600px)": {
+      fontSize: "1.5rem"
     }
+  },
+  seemoreBtn:{
+    "@media only screen and (min-width: 992px)": {
+      marginLeft:'0rem'
+    },
+      marginLeft:'8rem',
+    textTransform:'none',
+    
+  },
+
+  divWidth:{
+    "@media only screen and (min-width: 992px)": {
+      width:'600px',
+     
+    },
   }
 }));
