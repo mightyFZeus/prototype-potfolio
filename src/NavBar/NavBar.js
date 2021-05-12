@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   AppBar,
   Toolbar,
@@ -7,7 +8,8 @@ import {
   Drawer,
   List,
   ListItem,
-  ListItemText
+  ListItemText,
+  ListSubheader
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import useStyles from "./Style";
@@ -16,7 +18,24 @@ const NavBar = () => {
   const [drawer, setDrawer] = useState(false);
   const toggleDrawer = (open) => (event) => setDrawer(open);
 
-  const lists = ["Home", "Projects", "Resume", "Contact Me"];
+  const lists = [
+    {
+      listText: "Home",
+      listPath: "/"
+    },
+    {
+      listText: "Projects",
+      listPath: "/Projects"
+    },
+    {
+      listText: "Resume",
+      listPath: "/Resume"
+    },
+    {
+      listText: "Contacts",
+      listPath: "/Contacts"
+    }
+  ];
   return (
     <>
       <AppBar position="fixed" color="inherit">
@@ -32,13 +51,13 @@ const NavBar = () => {
               open={drawer}
               onClose={toggleDrawer(false)}
             >
-              {lists.map((list) => (
-                <List>
-                  <ListItem>
-                    <ListItemText>{list}</ListItemText>
+              <List>
+                {lists.map((list, key) => (
+                  <ListItem key={key} component={Link} to={list.listPath}>
+                    <ListItemText>{list.listText}</ListItemText>
                   </ListItem>
-                </List>
-              ))}
+                ))}
+              </List>
             </Drawer>
           </div>
         </Toolbar>

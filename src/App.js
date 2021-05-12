@@ -3,6 +3,7 @@ import uuid from "react-uuid";
 import Projects from "./Projects/Projects";
 import NavBar from "./NavBar/NavBar";
 import Home from "./Home/Home";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { CssBaseline } from "@material-ui/core";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
@@ -48,13 +49,22 @@ export default function App() {
     }
   });
   return (
-    <>
-      <CssBaseline />
-      <ThemeProvider theme={theme}>
-        <Projects resume={resume} />
-        <Home />
-        <NavBar />
-      </ThemeProvider>
-    </>
+    <Router>
+      <>
+        <CssBaseline />
+        <ThemeProvider theme={theme}>
+          <NavBar />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+
+            <Route exact path="/Projects">
+              <Projects resume={resume} />
+            </Route>
+          </Switch>
+        </ThemeProvider>
+      </>
+    </Router>
   );
 }
