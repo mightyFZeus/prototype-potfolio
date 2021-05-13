@@ -1,10 +1,10 @@
-import React,{useEffect, useState} from "react";
-import Desktop from './Desktop/Desktop'
+import React, { useEffect, useState } from "react";
+import Desktop from "./Desktop/Desktop";
+import Mobile from "./Mobile/Mobile";
 
-
-const Home = ({resume}) => {
+const Home = ({ resume }) => {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 900);
-  
+
   const updateMedia = () => {
     setDesktop(window.innerWidth > 900);
   };
@@ -16,11 +16,7 @@ const Home = ({resume}) => {
 
   return (
     <>
-        <div>
-      {isDesktop ? <Desktop resume={resume} /> : (
-        <div>I show on 1450px or lower</div>
-      )}
-    </div>
+      <div>{isDesktop ? <Desktop resume={resume} /> : <Mobile />}</div>
     </>
   );
 };
