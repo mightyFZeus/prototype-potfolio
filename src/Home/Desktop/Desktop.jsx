@@ -8,8 +8,8 @@ const Desktop = ({ resume }) => {
   const classes = useStyles();
   return (
     <>
-      <Grid container   spacing={4}>
-        <Grid  lg={6} >
+      <Grid container spacing={1}>
+        <Grid lg={6}>
           <div className={classes.toolbar} />
           <Typography className={classes.name} variant="h2">
             Hi,I'm Bolarin Olabisi{" "}
@@ -29,7 +29,7 @@ const Desktop = ({ resume }) => {
             </Button>
           </div>
         </Grid>
-        <Grid lg={6} >
+        <Grid lg={6}>
           <Projects resume={resume} />
         </Grid>
       </Grid>

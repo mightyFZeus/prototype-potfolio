@@ -21,7 +21,7 @@ const Projects = ({ resume }) => {
       <Box m={1} p={2}>
         <Grid container justify="center" spacing={4}>
           {resume.map((resume) => (
-            <Grid item key={resume.id} xs={12} sm={6} md={4} lg={3}>
+            <Grid item key={resume.id} xs={12} sm={6} md={4} lg={6}>
               <Card>
                 <CardContent key={resume.id}>
                   <Typography className={classes.title} variant="h4">
