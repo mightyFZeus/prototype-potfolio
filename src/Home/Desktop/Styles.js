@@ -5,18 +5,22 @@ export default makeStyles((theme) => ({
   name: {
     marginBottom: "1.5rem",
     fontWeight: 700,
-    fontSize: "5rem"
+    fontSize: "4rem",
+    marginTop: "7rem"
+    // marginLeft: '3rem'
   },
 
   role: {
     marginBottom: "1.5rem",
-    fontSize: "5rem"
+    fontSize: "2rem"
+    // marginLeft: '3rem'
   },
   description: {
     marginBottom: "1.5rem"
+    // marginLeft: '3rem'
   },
   seemoreBtn: {
-    marginLeft: "0rem",
+    marginLeft: "30rem",
     textTransform: "none"
   },
 
