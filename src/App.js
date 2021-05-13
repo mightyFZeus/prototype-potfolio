@@ -56,7 +56,7 @@ export default function App() {
           <NavBar />
           <Switch>
             <Route exact path="/">
-              <Home />
+              <Home resume={resume} />
             </Route>
 
             <Route exact path="/Projects">
