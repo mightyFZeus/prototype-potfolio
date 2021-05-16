@@ -4,5 +4,8 @@ export default makeStyles((theme) => ({
   menu: {
     marginLeft: "auto",
     marginRight: -12
+  },
+  logo: {
+    color: "white"
   }
 }));

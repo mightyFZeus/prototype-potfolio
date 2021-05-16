@@ -9,13 +9,15 @@ export default makeStyles((theme) => ({
     }
   },
   stack: {
-    marginBottom: "0.3em"
+    marginBottom: "0.3em",
+    color: "white"
   },
   toolbar: theme.mixins.toolbar,
-  button:{
-    marginRight:'2em'
+  button: {
+    marginRight: "2em"
   },
-  description:{
-    marginBottom: '1.5em'
+  description: {
+    marginBottom: "1.5em",
+    color: "white"
   }
 }));

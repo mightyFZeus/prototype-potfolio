@@ -25,7 +25,7 @@ const Desktop = ({ resume }) => {
                 technology and crafting layouts to achieve desired design and
                 look.
               </Typography>
-              <Button variant="outlined" className={classes.seemoreBtn}>
+              <Button variant="contained" className={classes.seemoreBtn}>
                 See More
               </Button>
             </div>

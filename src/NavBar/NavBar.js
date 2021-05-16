@@ -20,30 +20,36 @@ const NavBar = () => {
 
   const lists = [
     {
-      listText: "Home",
+      listText: "HOME",
       listPath: "/"
     },
     {
-      listText: "Projects",
+      listText: "PROJECTS",
       listPath: "/Projects"
     },
     {
-      listText: "Resume",
+      listText: "RESUME",
       listPath: "/Resume"
     },
     {
-      listText: "Contacts",
+      listText: "CONTACTS",
       listPath: "/Contacts"
     }
   ];
   return (
     <>
-      <AppBar position="fixed" color="inherit">
+      <AppBar
+        style={{ backgroundColor: "#101016" }}
+        position="fixed"
+        color="inherit"
+      >
         <Toolbar>
-          <Typography variant="h4">+Zeus</Typography>
+          <Typography className={classes.logo} variant="h4">
+            +Zeus
+          </Typography>
 
           <div className={classes.menu}>
-            <IconButton onClick={toggleDrawer(true)}>
+            <IconButton className={classes.logo} onClick={toggleDrawer(true)}>
               <MenuIcon />
             </IconButton>
             <Drawer
@@ -51,10 +57,12 @@ const NavBar = () => {
               open={drawer}
               onClose={toggleDrawer(false)}
             >
-              <List>
+              <List style={{ backgroundColor: "#101016", height: "100%" }}>
                 {lists.map((list, key) => (
                   <ListItem key={key} component={Link} to={list.listPath}>
-                    <ListItemText>{list.listText}</ListItemText>
+                    <ListItemText style={{ color: "#ffffff" }}>
+                      {list.listText}
+                    </ListItemText>
                   </ListItem>
                 ))}
               </List>

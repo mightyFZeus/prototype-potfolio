@@ -45,26 +45,29 @@ const resume = [
 export default function App() {
   const theme = createMuiTheme({
     typography: {
-      fontFamily: ["Raleway", "sans-serif"].join(",")
+      fontFamily: ["Raleway", "sans-serif"].join(","),
+      color: "white"
     }
   });
   return (
-    <Router>
-      <>
-        <CssBaseline />
-        <ThemeProvider theme={theme}>
-          <NavBar />
-          <Switch>
-            <Route exact path="/">
-              <Home resume={resume} />
-            </Route>
+    <div style={{ backgroundColor: "#101016" }}>
+      <Router>
+        <>
+          <CssBaseline />
+          <ThemeProvider theme={theme}>
+            <NavBar />
+            <Switch>
+              <Route exact path="/">
+                <Home resume={resume} />
+              </Route>
 
-            <Route exact path="/Projects">
-              <Projects resume={resume} />
-            </Route>
-          </Switch>
-        </ThemeProvider>
-      </>
-    </Router>
+              <Route exact path="/Projects">
+                <Projects resume={resume} />
+              </Route>
+            </Switch>
+          </ThemeProvider>
+        </>
+      </Router>
+    </div>
   );
 }

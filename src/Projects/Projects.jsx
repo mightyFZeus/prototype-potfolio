@@ -22,9 +22,13 @@ const Projects = ({ resume }) => {
         <Grid container justify="center" spacing={4}>
           {resume.map((resume) => (
             <Grid item key={resume.id} xs={12} sm={6} md={4} lg={6}>
-              <Card>
+              <Card style={{ backgroundColor: "#16161A" }}>
                 <CardContent key={resume.id}>
-                  <Typography className={classes.title} variant="h4">
+                  <Typography
+                    style={{ color: "white" }}
+                    className={classes.title}
+                    variant="h4"
+                  >
                     {resume.title}
                   </Typography>
                   <Typography variant="h6" className={classes.stack}>

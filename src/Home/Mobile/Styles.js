@@ -6,22 +6,27 @@ export default makeStyles((theme) => ({
     marginBottom: "1.5rem",
     fontWeight: 700,
     fontSize: "2.5rem",
-    marginTop: "2rem"
+    marginTop: "2rem",
+    color: "white"
     // marginLeft: '3rem'
   },
 
   role: {
     marginBottom: "1.5rem",
-    fontSize: "1.5rem"
+    fontSize: "1.5rem",
+    color: "white"
     // marginLeft: '3rem'
   },
   description: {
-    marginBottom: "1.5rem"
+    marginBottom: "1.5rem",
+    color: "white"
     // marginLeft: '3rem'
   },
   seemoreBtn: {
     marginLeft: "10rem",
-    textTransform: "none"
+    textTransform: "none",
+    color: "white",
+    backgroundColor: "#C71061"
   }
 
   // divWidth: {
