@@ -25,8 +25,10 @@ export default makeStyles((theme) => ({
   seemoreBtn: {
     marginLeft: "10rem",
     textTransform: "none",
-    color: "white",
-    backgroundColor: "#C71061"
+   
+     backgroundColor: "#16161A",
+    color:'white',
+    borderColor:'white'
   }
 
   // divWidth: {

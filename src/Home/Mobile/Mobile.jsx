@@ -23,7 +23,7 @@ const Mobile = () => {
                 technology and crafting layouts to achieve desired design and
                 look.
               </Typography>
-              <Button variant="contained" className={classes.seemoreBtn}>
+             <Button variant="contained" className={classes.seemoreBtn}>
                 See More
               </Button>
             </div>

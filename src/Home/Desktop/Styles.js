@@ -25,7 +25,7 @@ export default makeStyles((theme) => ({
   seemoreBtn: {
     marginLeft: "30rem",
     textTransform: "none",
-    color: "white",
+    
     backgroundColor: "#16161A",
     color:'white',
     borderColor:'white'
