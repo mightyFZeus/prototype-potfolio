@@ -26,7 +26,9 @@ export default makeStyles((theme) => ({
     marginLeft: "30rem",
     textTransform: "none",
     color: "white",
-    backgroundColor: "#C71061"
+    backgroundColor: "#16161A",
+    color:'white',
+    borderColor:'white'
   },
 
   divWidth: {

@@ -14,7 +14,12 @@ export default makeStyles((theme) => ({
   },
   toolbar: theme.mixins.toolbar,
   button: {
-    marginRight: "2em"
+    marginRight: "2em",
+    backgroundColor: "#16161A",
+    color:'white',
+    borderColor:'white',
+    textTransform:'none',
+   
   },
   description: {
     marginBottom: "1.5em",

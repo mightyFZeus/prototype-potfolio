@@ -38,23 +38,14 @@ const Projects = ({ resume }) => {
                     {resume.description}
                   </Typography>
                   <a href={resume.github}>
-                    <Button
-                      style={{ textTransform: "none" }}
-                      variant="contained"
-                      color="primary"
-                      className={classes.button}
-                    >
-                      github
-                    </Button>
+                  <Button variant="contained" className={classes.button}>
+                github
+              </Button>
                   </a>
                   <a href={resume.live}>
-                    <Button
-                      style={{ textTransform: "none" }}
-                      variant="contained"
-                      color="secondary"
-                    >
-                      live
-                    </Button>
+                  <Button variant="contained" className={classes.button}>
+                live
+              </Button>
                   </a>
                 </CardContent>
               </Card>
