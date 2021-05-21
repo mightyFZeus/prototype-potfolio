@@ -39,7 +39,15 @@ const resume = [
     github: "https://github.com/mightyFZeus/insure-page.git",
     live: "https://insureme.netlify.app",
     stack: "React + Styled Components"
-  }
+  },
+  {
+    id: uuid(),
+    title: "Expense Tracker",
+    description: "Keep tabs on your income and expenses",
+    github: "https://github.com/mightyFZeus/expense-tarcker.git",
+    live: "expense-trackerb.netlify.app",
+    stack: "React "
+  },
 ];
 
 export default function App() {
