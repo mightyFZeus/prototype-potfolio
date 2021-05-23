@@ -2,6 +2,7 @@ import "./styles.css";
 import uuid from "react-uuid";
 import Projects from "./Projects/Projects";
 import NavBar from "./NavBar/NavBar";
+import Contact from "./Contact/Contact";
 import Home from "./Home/Home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { CssBaseline } from "@material-ui/core";
@@ -47,7 +48,7 @@ const resume = [
     github: "https://github.com/mightyFZeus/expense-tarcker.git",
     live: "expense-trackerb.netlify.app",
     stack: "React "
-  },
+  }
 ];
 
 export default function App() {
@@ -72,7 +73,11 @@ export default function App() {
               <Route exact path="/Projects">
                 <Projects resume={resume} />
               </Route>
+              <Route exact path="/Contact">
+                <Contact />
+              </Route>
             </Switch>
+            <Contact />
           </ThemeProvider>
         </>
       </Router>
