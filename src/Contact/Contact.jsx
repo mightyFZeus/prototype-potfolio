@@ -1,5 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import {Box} from '@material-ui/core'
 import useStyles from "./Styles";
 const Contact = () => {
   const classes = useStyles();
@@ -23,6 +24,8 @@ const Contact = () => {
 
   return (
     <>
+
+     <Box className={classes.box}>
       <div className={classes.toolbar} />
       <form className="contact-form" onSubmit={sendEmail}>
         <label>Name</label>
@@ -33,6 +36,7 @@ const Contact = () => {
         <textarea name="message" />
         <input type="submit" value="Send" />
       </form>
+      </Box>
     </>
   );
 };
