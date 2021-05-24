@@ -18,7 +18,7 @@ const Projects = ({ resume }) => {
     <>
       <CssBaseline />
       <div className={classes.toolbar} />
-      <Box m={1} p={2}>
+      <Box  m={1} p={2}>
         <Grid container justify="center" spacing={4}>
           {resume.map((resume) => (
             <Grid item key={resume.id} xs={12} sm={6} md={4} lg={6}>

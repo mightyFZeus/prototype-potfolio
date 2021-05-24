@@ -6,7 +6,7 @@ const Mobile = () => {
   const classes = useStyles();
   return (
     <>
-      <Box m={2} p={2}>
+      <Box className={classes.box} m={2} p={2}>
         <Grid container spacing={1}>
           <Grid lg={6}>
             <div className={classes.toolbar} />

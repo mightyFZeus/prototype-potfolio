@@ -10,6 +10,10 @@ export default makeStyles((theme) => ({
     color: "white"
     // marginLeft: '3rem'
   },
+  box:{
+    
+    height:'100vh'
+  },
 
   role: {
     marginBottom: "1.5rem",

@@ -59,7 +59,7 @@ export default function App() {
     }
   });
   return (
-    <div style={{ backgroundColor: "#101016", height:'100vh' }}>
+    <div style={{ backgroundColor: "#101016",  }}>
       <Router>
         <>
           <CssBaseline />

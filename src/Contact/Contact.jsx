@@ -27,6 +27,7 @@ const Contact = () => {
 
      <Box className={classes.box}>
       <div className={classes.toolbar} />
+      <div className={classes.formDiv}>
       <form className="contact-form" onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="name" />
@@ -36,6 +37,8 @@ const Contact = () => {
         <textarea name="message" />
         <input type="submit" value="Send" />
       </form>
+      </div>
+      
       </Box>
     </>
   );
