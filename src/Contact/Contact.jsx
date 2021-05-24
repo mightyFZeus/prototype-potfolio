@@ -7,7 +7,9 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .sendForm("service_i2z4avg", "template_4w3e5at", e.target, 
+      
+      "user_nhjK17UH5oB3QFMRU2saR")
       .then(
         (result) => {
           console.log(result.text);
@@ -16,6 +18,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+      e.target.reset()
   }
 
   return (

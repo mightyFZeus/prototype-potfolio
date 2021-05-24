@@ -77,7 +77,7 @@ export default function App() {
                 <Contact />
               </Route>
             </Switch>
-            <Contact />
+         
           </ThemeProvider>
         </>
       </Router>
