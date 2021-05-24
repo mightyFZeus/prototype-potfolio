@@ -73,7 +73,7 @@ export default function App() {
               <Route exact path="/Projects">
                 <Projects resume={resume} />
               </Route>
-              <Route exact path="/Contact">
+              <Route exact path="/Contacts">
                 <Contact />
               </Route>
             </Switch>
