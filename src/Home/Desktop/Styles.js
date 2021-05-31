@@ -22,16 +22,14 @@ export default makeStyles((theme) => ({
     color: "white"
     // marginLeft: '3rem'
   },
-  seemoreBtn: {
-    marginLeft: "30rem",
-    textTransform: "none",
-    
-    backgroundColor: "#16161A",
-    color:'white',
-    borderColor:'white'
-  },
+ 
 
   divWidth: {
     width: "600px"
+  }, 
+  button:{
+    textTransform:'none',
+    color:'white',
+    backgroundColor:'#16161A'
   }
 }));

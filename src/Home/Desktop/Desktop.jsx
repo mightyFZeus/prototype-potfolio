@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Typography, Grid, Button, Box } from "@material-ui/core";
 import Projects from "../../Projects/Projects";
+import Contact from "../../Contact/Contact";
 
 import useStyles from "./Styles";
 const Desktop = ({ resume }) => {
   const classes = useStyles();
+  const [contact, setContact] = useState(false);
+
   return (
     <>
       <Box m={3} p={3}>
@@ -25,13 +28,17 @@ const Desktop = ({ resume }) => {
                 technology and crafting layouts to achieve desired design and
                 look.
               </Typography>
-              <Button variant="contained" className={classes.seemoreBtn}>
-                See More
+
+              <Button
+                className={classes.button}
+                onClick={() => setContact(!contact)}
+              >
+                Contact Me
               </Button>
             </div>
           </Grid>
           <Grid lg={6}>
-            <Projects resume={resume} />
+            {!contact ? <Projects resume={resume} /> : <Contact />}
           </Grid>
         </Grid>
       </Box>
